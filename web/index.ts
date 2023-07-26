@@ -115,7 +115,7 @@ const App = (_: any, state: AppState, setState: SetState) => {
   };
   const {
     fileType = "png",
-    text = "Migrei meu blog do Gatsby para o NextJS",
+    text = "O Impacto Revolucionário de Softwares P2P na Cena Musical",
     showToast = false,
     messageToast = "",
     loading = true,

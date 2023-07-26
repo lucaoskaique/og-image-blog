@@ -10,7 +10,7 @@ function getCss() {
         border-box: box-sizing;
     }
     body {
-        background: rgb(3, 5, 24);
+        background: rgb(0, 0, 0);
         height: 100vh;
         display: flex;
     }
