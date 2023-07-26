@@ -87,17 +87,17 @@ export function getHtml(parsedReq: ParsedRequest) {
 
             <div class="box-info">
                 <img
-                    src="https://github.com/willianjusten.png"
-                    alt="Willian Justen"
+                    src="https://github.com/lucaoskaique.png"
+                    alt="Lucas Kaíque"
                     class="avatar"
                 />
                 <div class="info">
-                    <p class="name">Willian Justen</p>
-                    <p class="link">willianjusten.com.br/${slugify(text, {
+                    <p class="name">Lucas Kaíque</p>
+                    <p class="link">lucaskaique.com.br/${slugify(text, {
                       lower: true,
                     })}</p>
                     <p class="twitter">
-                        twitter.com/Willian_justen
+                        twitter.com/lucaoskaique
                     </p>
                 </div>
             </div>
