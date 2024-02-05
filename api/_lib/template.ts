@@ -10,7 +10,7 @@ function getCss() {
         border-box: box-sizing;
     }
     body {
-        background: radial-gradient(circle, rgba(130,0,255,1) 22%, rgba(78,171,24,1) 75%);
+        background: rgba(130,0,255,1)
         height: 100vh;
         display: flex;
     }
