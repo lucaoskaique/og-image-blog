@@ -1,15 +1,15 @@
-import puppeteer from 'puppeteer-core';
+import * as core from 'puppeteer-core';
 import { getOptions } from './options';
 import { FileType } from './types';
 
-let _page: any;
+let _page: core.Page | null;
 
 async function getPage(isDev: boolean) {
     if (_page) {
         return _page;
     }
     const options = await getOptions(isDev);
-    const browser = await puppeteer.launch(options);
+    const browser = await core.launch(options);
     _page = await browser.newPage();
     return _page;
 }
