@@ -1,10 +1,10 @@
 import { IncomingMessage } from "http";
-import { parse } from "url";
 import { ParsedRequest } from "./types";
+import { URL } from "node:url";
 
 export function parseRequest(req: IncomingMessage) {
   console.log("HTTP " + req.url);
-  const { pathname } = parse(req.url || "/", true);
+  const { pathname } = new URL(req.url || "/");
 
   const arr = (pathname || "/").slice(1).split(".");
   let extension = "";
