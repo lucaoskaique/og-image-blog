@@ -1,8 +1,8 @@
-import puppeteer, { Page } from 'puppeteer-core';
+import puppeteer from 'puppeteer-core';
 import { getOptions } from './options';
 import { FileType } from './types';
 
-let _page: Page | null;
+let _page: any;
 
 async function getPage(isDev: boolean) {
     if (_page) {
